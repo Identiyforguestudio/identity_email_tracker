@@ -24,7 +24,7 @@ export default async function handler(req, res) {
   });
 
   // Serve tracking pixel
-  const imagePath = resolve('./public/pixel.png');
+  const imagePath = resolve('pixel.png');
   const imageBuffer = readFileSync(imagePath);
 
   res.setHeader('Content-Type', 'image/png');
